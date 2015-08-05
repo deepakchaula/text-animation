@@ -4,14 +4,10 @@ function loadImages (url, container){
    if(typeof data === 'object'){
      // create the HTML markup for the slider from data
       $.each(data['images'], function(key, image){
-        var slide = '<li><a href="#"><img src="'+image['url']+'" title="'+image['title']+'"></a></li>';
+        var slide = '<li><a href="#"><img src="'+image['url']+'"><p class="tooltip"> '+image['title']+'</p></a></li> ';
         $(container).append(slide);
-		  var title = $(this).attr('title');
-		  $('<p class="tooltip"></p>')
-			  .text(title)
-			  .appendTo('a')
       });
-     // initialize anythingSlider
+     // initialize gridrotatorSlider
       $( '#ri-grid' ).gridrotator( {
 					rows : 1,
 					columns : 5,

@@ -160,9 +160,6 @@ ul li a{
 	list-style: none;
 	width: 100%;
 }
-ul li a p{
-	display: none;
-}
 .tooltip {
 	position:absolute;
 	top: 5px;
@@ -171,7 +168,4 @@ ul li a p{
 	font-size:12px Arial;
 	background: black;
 	text-align: center;
-}
-.ri-grid ul li a p:first-child{
-	display: block;
 }
